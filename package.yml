@@ -1,3 +1,4 @@
 npcs:
-  '0': Tavernier
-  
+  '29': tavernier
+variables:
+  Name_player: '%essentials_nickname.papiMode%'

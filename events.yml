@@ -1,11 +1,14 @@
 events:
   #phase 1
   DonnezUnVerre: effect CONFUSION 25 3 hidden noicon
-  DonnezUnVerretimer: folder DonnezUnVerreFin,DonnezUnVerreFin1 delay:23
+  DonnezUnVerretimer: folder DonnezUnVerreFin,DonnezUnVerreFin1 delay:15
   DonnezUnVerreFin: effect BLINDNESS 7 5 hidden noicon
   DonnezUnVerreFin1: effect SLOW 7 5 hidden noicon
   #phase 2
   Tag_StartP1: tag add StartP2
-
-
-  SLOW
+  TpArene: "teleport -297;-53;1050;flat"
+  Eclaire: folder E1,E2,E4,E4 delay:7 period:1
+  E1: -297;-25;1103;flat 
+  E2: -350;-25;1050;flat 
+  E3: -297;-25;997;flat 
+  E4: -244;-25;1050;flat 

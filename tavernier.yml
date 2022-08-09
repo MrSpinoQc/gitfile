@@ -7,16 +7,16 @@ conversations:
     NPC_options:
       #Phase 1 : Discution pricipale
       'NP_1':
-        text: "Bonjour jeune aventurier! Bienvenue dans cette magnifique taverne que puis-je faire pour vous?"
-        pointer: 'PL_1_1'
+        text: "Bonjour %ph.essentials_nickname%! Bienvenue dans cette magnifique taverne que puis-je faire pour vous?"
+        pointer: 'PL_1_1,PL_1_2,PL_1_3'
       'NP_1_1':
         text: "Cet endroit est une taverne au plein d'aventurier se rassemblent pour parler de leurs conquêtes ou de leur aventure qui ont vécu!"
       'NP_1_2':
         text: "Voilà votre verre, attention le mélange peut être fort"
-        events: 'DonnezUnVerre'
+        events: 'DonnezUnVerre,DonnezUnVerretimer'
       #Phase 2 : Demarage de la quete pour donnez accept au gros combat
       'NP_2':
-        text:
+        text: 'test'
     player_options:
 
       #Phase 1 : Discution pricipale
@@ -30,6 +30,7 @@ conversations:
       'PL_1_3':
         text: "J'ai entendu parler d'un histoire d'un chevalier. Avez-vous plus d'infos?"
         pointer: NP_2
+        events: 'TpArene,Eclaire'
 
       #Phase 2 : Demarage de la quete pour donnez accept au gros combat
 
