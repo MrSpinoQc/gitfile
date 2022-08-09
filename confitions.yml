@@ -1,0 +1,4 @@
+conditions:
+  #phase 1
+  P1CheckMoney: money 10
+  

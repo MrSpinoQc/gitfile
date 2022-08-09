@@ -12,18 +12,31 @@ conversations:
       'NP_1_1':
         text: "Cet endroit est une taverne au plein d'aventurier se rassemblent pour parler de leurs conquêtes ou de leur aventure qui ont vécu!"
       'NP_1_2':
-        text: "voilà votre verre, attention le mélange peut être fort"
+        text: "Voilà votre verre, attention le mélange peut être fort"
+        events: 'DonnezUnVerre'
+      #Phase 2 : Demarage de la quete pour donnez accept au gros combat
+      'NP_2':
+        text:
     player_options:
+
       #Phase 1 : Discution pricipale
       'PL_1_1':
         text: "Quel est cette endroit"
         pointer: NP_1_1
       'PL_1_2':
-        text: 'Pouvez-vous me servir à boire!'
+        text: 'Pouvez-vous me servir à boire! (Coute 10$)'
         pointer: NP_1_2
-      'PL_1_3'
-        text: "J'ai entendu parler d'un histoire d'un chevalier. avez-vous plus d'infos?"
-      
+        conditions: P1CheckMoney
+      'PL_1_3':
+        text: "J'ai entendu parler d'un histoire d'un chevalier. Avez-vous plus d'infos?"
+        pointer: NP_2
+
+      #Phase 2 : Demarage de la quete pour donnez accept au gros combat
+
+
+
+
+
 
 
 
