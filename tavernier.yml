@@ -1,8 +1,34 @@
 conversations:
   tavernier:
     quester: 'tavernier'
-    first: 'text1'
-    stop: 'true'
+    first: 'NP_1'
+    stop: 'false'
     interceptor: simple
     NPC_options:
+      #Phase 1 : Discution pricipale
+      'NP_1':
+        text: "Bonjour jeune aventurier! Bienvenue dans cette magnifique taverne que puis-je faire pour vous?"
+        pointer: 'PL_1_1'
+      'NP_1_1':
+        text: "Cet endroit est une taverne au plein d'aventurier se rassemblent pour parler de leurs conquêtes ou de leur aventure qui ont vécu!"
+      'NP_1_2':
+        text: "voilà votre verre, attention le mélange peut être fort"
     player_options:
+      #Phase 1 : Discution pricipale
+      'PL_1_1':
+        text: "Quel est cette endroit"
+        pointer: NP_1_1
+      'PL_1_2':
+        text: 'Pouvez-vous me servir à boire!'
+        pointer: NP_1_2
+      'PL_1_3'
+        text: "J'ai entendu parler d'un histoire d'un chevalier. avez-vous plus d'infos?"
+      
+
+
+
+
+      #Phase 1 : Discution pricipale
+      #Phase 2 : Demarage de la quete pour donnez accept au gros combat
+      #Phase 3 : Lancement du combat dans l'arene
+      #phase 4 : Retour a la taverne apres le combat avec le boss
