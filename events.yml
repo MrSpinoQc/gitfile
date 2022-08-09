@@ -1,5 +1,11 @@
 events:
   #phase 1
-  
+  DonnezUnVerre: effect CONFUSION 25 3 hidden noicon
+  DonnezUnVerretimer: folder DonnezUnVerreFin,DonnezUnVerreFin1 delay:23
+  DonnezUnVerreFin: effect BLINDNESS 7 5 hidden noicon
+  DonnezUnVerreFin1: effect SLOW 7 5 hidden noicon
   #phase 2
   Tag_StartP1: tag add StartP2
+
+
+  SLOW
