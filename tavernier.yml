@@ -1,0 +1,8 @@
+conversations:
+  tavernier:
+    quester: 'tavernier'
+    first: 'text1'
+    stop: 'true'
+    interceptor: simple
+    NPC_options:
+    player_options:
