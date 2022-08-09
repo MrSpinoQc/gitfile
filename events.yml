@@ -1,14 +1,22 @@
 events:
   #phase 1
+  CosteVerre: money -10
   DonnezUnVerre: effect CONFUSION 25 3 hidden noicon
   DonnezUnVerretimer: folder DonnezUnVerreFin,DonnezUnVerreFin1 delay:15
   DonnezUnVerreFin: effect BLINDNESS 7 5 hidden noicon
   DonnezUnVerreFin1: effect SLOW 7 5 hidden noicon
   #phase 2
   Tag_StartP1: tag add StartP2
+
+  #phase 3
   TpArene: "teleport -297;-53;1050;flat"
-  Eclaire: folder E1,E2,E4,E4 delay:7 period:1
-  E1: -297;-25;1103;flat 
-  E2: -350;-25;1050;flat 
-  E3: -297;-25;997;flat 
-  E4: -244;-25;1050;flat 
+  Eclaire: folder E1,E2,E3,E4 delay:7 period:2
+  E1: lightning -297;-25;1103;flat 
+  E2: lightning -350;-25;1050;flat 
+  E3: lightning -297;-25;997;flat 
+  E4: lightning -244;-25;1050;flat 
+  EclaireSpawn: folder E5,EX1,SpawnBossV2 delay:15
+  E5: lightning -297;-53;1050;flat
+  EX1: explosion 0 0 4 -297;-53;1050;flat
+  SpawnBoss: mspawnmob -297;-53;1050;flat GIANT 1 
+  SpawnBossV2: command mm mobs spawn toro_knight_horse 1 flat,-297,-53,1050

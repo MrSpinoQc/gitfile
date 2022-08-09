@@ -13,7 +13,7 @@ conversations:
         text: "Cet endroit est une taverne au plein d'aventurier se rassemblent pour parler de leurs conquêtes ou de leur aventure qui ont vécu!"
       'NP_1_2':
         text: "Voilà votre verre, attention le mélange peut être fort"
-        events: 'DonnezUnVerre,DonnezUnVerretimer'
+        events: 'DonnezUnVerre,DonnezUnVerretimer,CosteVerre'
       #Phase 2 : Demarage de la quete pour donnez accept au gros combat
       'NP_2':
         text: 'test'
@@ -30,7 +30,7 @@ conversations:
       'PL_1_3':
         text: "J'ai entendu parler d'un histoire d'un chevalier. Avez-vous plus d'infos?"
         pointer: NP_2
-        events: 'TpArene,Eclaire'
+        events: 'TpArene,Eclaire,EclaireSpawn'
 
       #Phase 2 : Demarage de la quete pour donnez accept au gros combat
 
